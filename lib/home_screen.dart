@@ -1,6 +1,8 @@
 import 'package:feature_app/hero_animation/hero_animation_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'threejs/three_js_screen.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -27,10 +29,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Text("Hero Animation")),
             TextButton(
                 onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => HeroAnimationScreen()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => FlutterGame()));
                 },
                 child: Text("Three.js"))
           ],
